@@ -1,5 +1,5 @@
 const countDown =()=>{
-    const countDate = new Date(`sep 15,2021 00:00:00`).getTime();
+    const countDate = new Date(`sep 14,2021 00:00:00`).getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
     //how the fucks does time work?
@@ -25,3 +25,4 @@ const countDown =()=>{
 countDown();
 
 const clearTime = setInterval(countDown,1000);
+console.log(clearTime);
