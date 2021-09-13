@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.coundown_img_area img{
+    width: 600px;
+    height: 450px;
+}
+.coundown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
