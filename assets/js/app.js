@@ -1,5 +1,5 @@
 const countDown =()=>{
-    const countDate = new Date(`sep 14,2021 00:00:00`).getTime();
+    const countDate = new Date(`oct 1,2021 00:00:00`).getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
     //how the fucks does time work?
@@ -14,7 +14,7 @@ const countDown =()=>{
     const textMinut = Math.floor((gap%hour)/minute);
     const textSecond = Math.floor((gap%minute)/second);
     if(countDate < now ){
-       return;
+      return;
     }
     document.querySelector('.day').innerText = textDay<10?'0'+textDay:textDay;
     document.querySelector('.hour').innerText = textHour<10?'0'+textHour:textHour;
@@ -24,5 +24,5 @@ const countDown =()=>{
 }
 countDown();
 
-const clearTime = setInterval(countDown,1000);
+let clearTime = setInterval(countDown,1000);
 console.log(clearTime);
